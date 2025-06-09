@@ -1,4 +1,4 @@
-public class MrswRegularRegister {
+public class MrswRegularRegister implements Register<Byte> {
   static int RANGE = Byte.MAX_VALUE - Byte.MIN_VALUE + 1;
 
   MrswBooleanSafeRegister bits[];
@@ -12,16 +12,16 @@ public class MrswRegularRegister {
     this.bits[0].write(0, true);
   }
 
-  public int read(int id) {
+  public Byte read(int id) {
     for (int i = RANGE; i >= 0; --i) {
       if (this.bits[i].read(id)) {
-        return i;
+        return (byte)i;
       }
     }
     return -1;
   }
 
-  public void write(int id, int value) {
+  public void write(int id, Byte value) {
     this.bits[value].write(id, true);
     for (int i = value + 1; i < RANGE; ++i) {
       this.bits[value].write(id, false);

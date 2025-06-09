@@ -1,16 +1,17 @@
-public class MrswBooleanSafeRegister {
+public class MrswBooleanSafeRegister implements Register<Boolean> {
   private SrswBooleanSafeRegister registers[];
+
   public MrswBooleanSafeRegister(int n) {
     this.registers = new SrswBooleanSafeRegister[n];
   }
 
-  public boolean read(int id) {
-    return registers[id].read();
+  public Boolean read(int id) {
+    return registers[id].read(id);
   }
 
-  public void write(int id, boolean value) {
+  public void write(int id, Boolean value) {
     for (int i = 0; i < registers.length; ++i) {
-      registers[id].write(value);
+      registers[id].write(id, value);
     }
   }
 }
