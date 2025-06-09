@@ -2,6 +2,7 @@ public class MrswBooleanRegularRegister {
   private MrswBooleanSafeRegister register;
 
   public MrswBooleanRegularRegister(int n) {
+    this.register = new MrswBooleanSafeRegister(n);
   }
 
   public boolean read(int id) {
