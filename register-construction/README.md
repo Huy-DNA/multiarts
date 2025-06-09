@@ -23,7 +23,7 @@ The problem of atomic snapshot construction asks how to construct an atomic snap
 | SRSW Boolean safe    | MRSW Boolean safe    |           |         |
 | MRSW Boolean safe    | MRSW Boolean regular |           |         |
 | MRSW Boolean regular | MRSW regular         |           |         |
-| MRSW regular         | SRSW atomic          |           | I did think about the usage of timestamps but quickly dismissed it. |
+| MRSW regular         | SRSW atomic          |           | I did think about the use of timestamps but quickly dismissed it. |
 | SRSW atomic          | MRSW atomic          |           |         |
 | MRSW atomic          | MRMW atomic          |           |         |
 | MRSW atomic          | Atomic snapshot      |           |         |
