@@ -17,13 +17,13 @@ The problem of register construction asks how to reconstruct a register of type 
 
 The problem of atomic snapshot construction asks how to construct an atomic snapshot object from a read-write register.
 
-|  Base register       | Implemented register | File      |
-|----------------------|----------------------|-----------|
-|                      | SRSW Boolean safe    |           |
-| SRSW Boolean safe    | MRSW Boolean safe    |           |
-| MRSW Boolean safe    | MRSW Boolean regular |           |
-| MRSW Boolean regular | MRSW regular         |           |
-| MRSW regular         | SRSW atomic          |           |
-| SRSW atomic          | MRSW atomic          |           |
-| MRSW atomic          | MRMW atomic          |           |
-| MRSW atomic          | Atomic snapshot      |           |
+|  Base register       | Implemented register | File      | Remarks |
+|----------------------|----------------------|-----------|---------|
+|                      | SRSW Boolean safe    |           |         |
+| SRSW Boolean safe    | MRSW Boolean safe    |           |         |
+| MRSW Boolean safe    | MRSW Boolean regular |           |         |
+| MRSW Boolean regular | MRSW regular         |           |         |
+| MRSW regular         | SRSW atomic          |           | I did think about the usage of timestamps but quickly dismissed it. |
+| SRSW atomic          | MRSW atomic          |           |         |
+| MRSW atomic          | MRMW atomic          |           |         |
+| MRSW atomic          | Atomic snapshot      |           |         |
