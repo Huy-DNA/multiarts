@@ -21,7 +21,7 @@ The problem of atomic snapshot construction asks how to construct an atomic snap
 |----------------------|----------------------|-----------|
 |                      | SRSW Boolean safe    |           |
 | SRSW Boolean safe    | MRSW Boolean safe    |           |
-| MRSW Boolean safe    | MRMW Boolean regular |           |
+| MRSW Boolean safe    | MRSW Boolean regular |           |
 | MRSW Boolean regular | MRSW regular         |           |
 | MRSW regular         | SRSW atomic          |           |
 | SRSW atomic          | MRSW atomic          |           |
