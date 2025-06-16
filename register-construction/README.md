@@ -6,8 +6,13 @@ This folder houses the problem of register construction, which is fundamental in
 
 A register can be categorized based on 3 dimensions:
 - Range: Boolean and Multi-valued.
+  - Boolean registers can only store either 0 or 1.
+  - Multi-valued registers can store more than 2 values.  
 - Participants: MRMW, MRSW, SRSW.
-- Safety: Safe, Regular, Atomic.
+  - MRMW registers stand for Multi-reader, Multi-writer registers.
+  - MRSW registers stand for Multi-reader, Single-writer registers.
+  - SRSW registers stand for Single-reader, Single-writer registers. 
+- Safety: Safe, Regular, Atomic. 
 
 ## Problem
 
