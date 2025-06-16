@@ -20,10 +20,10 @@ The problem of atomic snapshot construction asks how to construct an atomic snap
 |  Base register       | Implemented register | File      | Remarks |
 |----------------------|----------------------|-----------|---------|
 |                      | SRSW Boolean safe    |           |         |
-| SRSW Boolean safe    | MRSW Boolean safe    |           |         |
-| MRSW Boolean safe    | MRSW Boolean regular |           |         |
-| MRSW Boolean regular | MRSW regular         |           |         |
-| MRSW regular         | SRSW atomic          |           | I did think about the use of timestamps but quickly dismissed it. |
-| SRSW atomic          | MRSW atomic          |           |         |
-| MRSW atomic          | MRMW atomic          |           |         |
+| SRSW Boolean safe    | MRSW Boolean safe    | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswBooleanSafeRegister.java) |         |
+| MRSW Boolean safe    | MRSW Boolean regular | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswBooleanRegularRegister.java) |         |
+| MRSW Boolean regular | MRSW regular         | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswRegularRegister.java) |         |
+| MRSW regular         | SRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/SrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
+| SRSW atomic          | MRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
+| MRSW atomic          | MRMW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrmwAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | MRSW atomic          | Atomic snapshot      |           |         |
