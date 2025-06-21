@@ -18,9 +18,9 @@ A register can be categorized based on 3 dimensions:
 
 It's well known that all types of registers are equivalent in power and equivalent with the atomic snapshot object.
 
-The problem of register construction asks how to reconstruct a register of type A from a register of type B.
+The problem of register construction asks how to reconstruct **a register of type A** from **registers of type B** in a *wait-free* manner.
 
-The problem of atomic snapshot construction asks how to construct an atomic snapshot object from a read-write register.
+The problem of atomic snapshot construction asks how to construct **an atomic snapshot object** from **read-write registers** in a *wait-free* manner.
 
 |  Base register       | Implemented register | File      | Remarks |
 |----------------------|----------------------|-----------|---------|
