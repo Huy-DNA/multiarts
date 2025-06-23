@@ -11,12 +11,12 @@ class StampedSnapshot {
 }
 
 public class AtomicSnapshot {
-  StampedSnapshot registers[]; // MRMW atomic registers
+  StampedSnapshot registers[]; // MRSW atomic registers
 
-  public AtomicSnapshot(int nregisters) {
-    this.registers = new StampedSnapshot[nregisters];
-    for (int i = 0; i < nregisters; ++i) {
-      byte[] snap = new byte[nregisters];
+  public AtomicSnapshot(int n) {
+    this.registers = new StampedSnapshot[n];
+    for (int i = 0; i < n; ++i) {
+      byte[] snap = new byte[n];
       this.registers[i] = new StampedSnapshot(0, (byte) 0, snap);
     }
   }
@@ -29,10 +29,10 @@ public class AtomicSnapshot {
     return copy;
   }
 
-  public void update(byte newValue, int index) {
+  public void update(int id, byte newValue) {
     byte[] snap = scan();
-    StampedSnapshot oldValue = registers[index];
-    registers[index] = new StampedSnapshot(oldValue.stamp + 1, newValue, snap);
+    StampedSnapshot oldValue = registers[id];
+    registers[id] = new StampedSnapshot(oldValue.stamp + 1, newValue, snap);
   }
 
   public byte[] scan() {
