@@ -34,3 +34,9 @@ The problem of atomic snapshot construction asks how to construct **an atomic sn
 | SRSW atomic          | MRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | MRSW atomic          | MRMW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrmwAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | MRMW atomic          | Atomic snapshot      | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/AtomicSnapshot%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
+
+## Challenges
+
+- The book's implementation of atomic snapshot seems to have some problems: The number of registers = The number of threads & Each register is only modified by one thread. However, I think an atomic snaphot object should allow an arbitrary number of registers and each register should be modifiable by any threads? I have made some modifications, however, its correctness is not verified yet.
+
+- Unbounded timestamp required...
