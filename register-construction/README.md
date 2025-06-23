@@ -37,6 +37,8 @@ The problem of atomic snapshot construction asks how to construct **an atomic sn
 
 ## Challenges
 
-- The book's implementation of atomic snapshot seems to have some problems: The number of registers = The number of threads & Each register is only modified by one thread. However, I think an atomic snaphot object should allow an arbitrary number of registers and each register should be modifiable by any threads?
+1. The book's implementation of atomic snapshot seems to have some problems: The number of registers = The number of threads & Each register is only modified by one thread. However, I think an atomic snaphot object should allow an arbitrary number of registers and each register should be modifiable by any threads?
 
-- Unbounded timestamp required...
+   Updated: https://www.cs.yale.edu/homes/aspnes/pinewiki/AtomicSnapshots.html states that an atomic snapshot is an array of MRSW registers... so maybe the book is correct.
+
+3. Unbounded timestamp required...
