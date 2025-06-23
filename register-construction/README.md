@@ -31,4 +31,4 @@ The problem of atomic snapshot construction asks how to construct **an atomic sn
 | MRSW regular         | SRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/SrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | SRSW atomic          | MRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | MRSW atomic          | MRMW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrmwAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
-| MRSW atomic          | Atomic snapshot      |           |         |
+| MRMW atomic          | Atomic snapshot      |           |         |
