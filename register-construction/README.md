@@ -2,6 +2,8 @@
 
 This folder houses the problem of register construction, which is fundamental in shared-memory programming.
 
+Link: [The Art of Multiprocessor Programming](https://g.co/kgs/w8L3qFC)
+
 ## Terminology
 
 A register can be categorized based on 3 dimensions:
@@ -31,4 +33,4 @@ The problem of atomic snapshot construction asks how to construct **an atomic sn
 | MRSW regular         | SRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/SrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | SRSW atomic          | MRSW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrswAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
 | MRSW atomic          | MRMW atomic          | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/MrmwAtomicRegister%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
-| MRMW atomic          | Atomic snapshot      |           |         |
+| MRMW atomic          | Atomic snapshot      | [Link](https://github.com/Huy-DNA/multiarts/blob/main/register-construction/AtomicSnapshot%20(with%20unbounded%20TS).java) | Unbounded timestamp required |
