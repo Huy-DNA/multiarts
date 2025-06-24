@@ -27,4 +27,4 @@ In a system of $n$ threads, a RMW instruction is universal if its consensus numb
 ## The universality of consensus
 
 The problem of universal construction asks to devise a methodology to implement any wait-free concurrent objects
-that have a sequential specification using a universal read-modify-write instruction.
+that have a deterministic sequential specification using a universal read-modify-write instruction.
