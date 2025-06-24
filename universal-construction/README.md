@@ -2,7 +2,7 @@
 
 This folder houses the problem of universal construction to demonstrate the universality of consensus.
 
-Link: The Art of Multiprocessor Programming
+Link: [The Art of Multiprocessor Programming](https://g.co/kgs/w8L3qFC)
 
 ## Read-modify-write (RMW) instruction
 
