@@ -3,6 +3,7 @@
 This folder houses the problem of register construction, which is fundamental in shared-memory programming.
 
 Link: [The Art of Multiprocessor Programming](https://g.co/kgs/w8L3qFC)
+
 Link: [Atomic Snapshots of Shared Memory](https://dl.acm.org/doi/pdf/10.1145/93385.93394)
 
 ## Terminology
