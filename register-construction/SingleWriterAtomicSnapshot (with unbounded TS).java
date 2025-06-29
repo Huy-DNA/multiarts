@@ -10,7 +10,7 @@ class StampedSnapshot {
   }
 }
 
-public class AtomicSnapshot {
+public class SingleWriterAtomicSnapshot {
   StampedSnapshot registers[]; // MRSW atomic registers
 
   public AtomicSnapshot(int n) {
@@ -42,7 +42,7 @@ public class AtomicSnapshot {
     collect: while (true) {
       newSnaps = this.collect();
       for (int i = 0; i < oldSnaps.length; ++i) {
-        if (oldSnaps[i].stamp != newSnaps[i].stamp || oldSnaps[i].value != newSnaps[i].value) {
+        if (oldSnaps[i].stamp != newSnaps[i].stamp) {
           if (moved[i]) {
             return oldSnaps[i].snap;
           } else {
