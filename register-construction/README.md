@@ -6,6 +6,8 @@ Link: [The Art of Multiprocessor Programming](https://g.co/kgs/w8L3qFC)
 
 Link: [Atomic Snapshots of Shared Memory](https://dl.acm.org/doi/pdf/10.1145/93385.93394)
 
+Link: [Bounded Concurrent Time-Stamp Systems Are Constructible](https://dl.acm.org/doi/pdf/10.1145/73007.73051)
+
 ## Terminology
 
 A register can be categorized based on 3 dimensions:
@@ -46,3 +48,5 @@ The problem of atomic snapshot construction asks how to construct **an atomic sn
    Updated: What is implemented in the book and here is termed single-writer atomic snapshot objects. To quote [Atomic Snapshots of Shared Memory](https://dl.acm.org/doi/pdf/10.1145/93385.93394), "a *single-writer snapshot memory*, in which each word may be updated by only, one process, from single-writer, n-reader registers". What I had in mind was a *multi-writer snapshot memory*.
 
 3. Unbounded timestamp required...
+
+   Updated: See [Bounded Concurrent Time-Stamp Systems Are Constructible](https://dl.acm.org/doi/pdf/10.1145/73007.73051).
